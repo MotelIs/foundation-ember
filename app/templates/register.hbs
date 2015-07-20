@@ -1,0 +1,15 @@
+<section class="register">
+  {{#fm-form action='register'}}
+    <h1>Sign Up</h1>
+
+    {{fm-field type='text' value=model.email errors=model.errors.email label="Email Address"}}
+
+    {{fm-field type='password' value=model.password errors=model.errors.password label="Password"}}
+
+    {{fm-field type='password' value=model.passwordConfirmation errors=model.errors.password_confirmation label="Confirm Password"}}
+    {{#fm-submit value="Sign Up"}}
+      {{link-to 'Log In' 'login'}}
+    {{/fm-submit}}
+  {{/fm-form}}
+
+</section>
