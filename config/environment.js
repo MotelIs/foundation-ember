@@ -19,6 +19,12 @@ module.exports = function(environment) {
     }
   };
 
+  ENV['simple-auth'] = {
+    serverTokenRevocationEndpoint: '/revoke'
+  };
+
+  ENV['API_HOST'] = 'http://localhost:4200';
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
